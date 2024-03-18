@@ -8,6 +8,7 @@ for(var i = 0;i < drums;i++)
   {
     var btnPress=this.innerHTML;
     clicked(btnPress);
+     buttonClicked(btnPress);
   });
    
 }
@@ -15,6 +16,7 @@ for(var i = 0;i < drums;i++)
 document.addEventListener("keypress",function(event)
 {
   clicked(event.key); 
+   buttonClicked(event.key);
 });
 
 
@@ -64,4 +66,14 @@ function clicked(key)
     default:
       alert("you had pressed wrong key please press suitable key");
   }
+}
+function buttonClicked(clck)
+{
+  var btnPress=document.querySelector("."+clck)
+  btnPress.classList.add("pressed");
+  setTimeout(function()
+  {
+     btnPress.classList.remove("pressed");
+
+  },300);
 }
