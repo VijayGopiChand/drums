@@ -59,3 +59,7 @@ background-image: url(images/crash.png);
   margin: 10px;
   background-color: white;
 }
+.pressed {
+box-shadow: 0 3px 4 0 grey;
+opacity: 0.5;
+}
