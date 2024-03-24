@@ -1,7 +1,7 @@
 
 var drums=document.querySelectorAll(".drum").length;
 
-for(var i = 0;i < drums;i++)
+for(var i = 0;i < drums-1;i++)
 {
 
   document.querySelectorAll(".drum")[i].addEventListener("click",function()
